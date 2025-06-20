@@ -59,10 +59,10 @@ button:hover {
   color: #00d9ff; /* color del texto */
   margin: 0; /* elimina el margen por defecto */
   margin-top: 10px; /* espacio entre el texto y el contador */
-  margin-left: 90px;
+  margin-left: 100px;
 }
 
-.s-r{
+.añadir{
  background-color: #0084ff; /* fondo del input*/
   border-radius: 5px; /* bordes redondeados */
   border: #00d9ff 2px solid; /* borde blanco */
@@ -70,9 +70,10 @@ button:hover {
   font-size: 1.2rem; /* tamaño de la fuente */
   color: #ffffff; /* color del texto */
   text-align: center;
+  align-items: center;
 }
 
-.s-r:focus {
+.añadir:focus {
   outline: none; /* elimina el borde de enfoque */
   box-shadow: 0 0 5px #00d9ff; /* sombra azul al enfocar */
 }
