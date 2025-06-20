@@ -31,8 +31,8 @@ button:hover {
   transform: scale(1.05); /* efecto de zoom al pasar el mouse */
 }
 
-.contador {
-  font-family: 'Courier New', Courier, monospace;
+.counter {
+  font-family: Verdana, sans-serif, monospace;
   font-size: 3rem;
   background-color: #0084ff;
   border-radius: 5px;
@@ -41,8 +41,23 @@ button:hover {
   margin: 0 auto;
   text-align: center;
 }
+.counter.animate {
+  animation: pop 0.5s ease;
+}
 
-.boton {
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.generic-buttons {
   display: flex; /*permiete alinear los elementos del div boton de manera sencilla*/
   flex-direction: row;  /* alinea los elementos en una fila*/
   align-items: center; /* alinea los elementos en el centro verticalmente */
@@ -51,7 +66,19 @@ button:hover {
   gap: 15px; /* espacio entre elementos */
 }
 
-.cantidades {
+.button1:hover{
+  transform: scale(1.05); /* efecto de zoom al pasar el mouse */
+  background-color: #00d9ff; /* cambia el color de fondo al pasar el mouse */
+  color: #000000; /* cambia el color del texto al pasar el mouse */
+}
+.button2:hover{
+  transform: scale(1.05); /* efecto de zoom al pasar el mouse */
+  background-color: #00d9ff; /* cambia el color de fondo al pasar el mouse */
+  color: #000000; /* cambia el color del texto al pasar el mouse */
+}
+
+
+.cuantities {
   display: flex;
   flex-direction: row; /* alinea los elementos en una columna */
   gap: 20px; /* espacio entre los elementos */
@@ -59,10 +86,11 @@ button:hover {
   color: #00d9ff; /* color del texto */
   margin: 0; /* elimina el margen por defecto */
   margin-top: 10px; /* espacio entre el texto y el contador */
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
-.añadir{
+.agregate
+{
  background-color: #0084ff; /* fondo del input*/
   border-radius: 5px; /* bordes redondeados */
   border: #00d9ff 2px solid; /* borde blanco */
@@ -73,7 +101,7 @@ button:hover {
   align-items: center;
 }
 
-.añadir:focus {
+.agregate:focus {
   outline: none; /* elimina el borde de enfoque */
   box-shadow: 0 0 5px #00d9ff; /* sombra azul al enfocar */
 }
