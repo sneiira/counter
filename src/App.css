@@ -5,6 +5,10 @@ input[type=number]::-webkit-outer-spin-button {
 }/* Estilo para eliminar los botones de incremento y decremento en inputs de tipo number */
 
 #root {
+  display: flex;
+  flex-direction: column; /* alinea los elementos en una columna */
+  align-items: center; /* alinea los elementos en el centro horizontalmente */
+  justify-content: center; /* alinea los elementos en el centro verticalmente */
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -49,7 +53,7 @@ button:hover {
   flex-direction: row;  /* alinea los elementos en una fila*/
   align-items: center; /* alinea los elementos en el centro verticalmente */
   margin-top: 20px;
-  margin-left: 20px;
+  
   gap: 15px; /* espacio entre elementos */
 }
 
@@ -73,19 +77,19 @@ button:hover {
   color: #00d9ff; /* color del texto */
   margin: 0; /* elimina el margen por defecto */
   margin-top: 10px; /* espacio entre el texto y el contador */
-  margin-left: 50px;
+
 }
 
 .agregate
 {
- background-color: #0084ff; /* fondo del input*/
+  background-color: #0084ff; /* fondo del input*/
   border-radius: 5px; /* bordes redondeados */
   border: #00d9ff 2px solid; /* borde blanco */
   padding: 10px; /* espacio interno */
   font-size: 1.2rem; /* tamaño de la fuente */
   color: #ffffff; /* color del texto */
   text-align: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .agregate:focus {

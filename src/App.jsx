@@ -12,7 +12,7 @@ function App() {
      <h1>Counter</h1>
        <span 
         className="counter"
-        style={ {width: `${String(count).length + 1}ch`, maxWidth: '200px' }}
+        style={ {width: `${String(count).length + 1}ch` }}
       >
         {count}
       </span>
@@ -22,7 +22,8 @@ function App() {
      </div> 
      <div className='cuantities'>
       <label>agregate<br />
-       <input className= 'agregate'type="number" value={s} onChange={(e) => setS(e.target.value === "" ? null : Number(e.target.value))} style={{ width: `${String(s).length + 1}ch` }} />
+       <input className= 'agregate'type="number" value={s} onChange={(e) => setS(e.target.value === "" ? null : Number(e.target.value))}
+        style={{ width: `${String(s).length + 1}ch`, maxWidth: '200px' }} />
       </label>
      </div>
     </>
