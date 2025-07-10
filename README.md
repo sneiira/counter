@@ -1,8 +1,4 @@
 # 🧮 Counter
-
-[![License](https://img.shields.io/github/license/sneiira/counter)]()
-[![Build Status](https://img.shields.io/github/actions/workflow/status/sneiira/counter/ci.yml)]()
-
 > A lightweight, persistent counter CLI tool to increment/decrement and display a numeric value.
 
 ---
